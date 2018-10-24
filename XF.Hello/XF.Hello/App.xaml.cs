@@ -10,8 +10,9 @@ namespace XF.Hello
 		public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new MainPage();
+            
+            // incluir a classe NavigationPage
+			MainPage = new NavigationPage( new MainPage() );
 		}
 
 		protected override void OnStart ()
