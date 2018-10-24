@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XF.Hello.App_Code;
 
 namespace XF.Hello
 {
@@ -15,6 +16,9 @@ namespace XF.Hello
 		public ConfigPage ()
 		{
 			InitializeComponent ();
+
+            BindingContext = App.ConfigVM;
+
 		}
 	}
 }

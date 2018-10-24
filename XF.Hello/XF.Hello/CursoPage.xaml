@@ -1,9 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XF.Hello.CursoPage">
-  <!--Pages can be added as references or inline-->
-  <ContentPage Title="Tab 1" />
-  <ContentPage Title="Tab 2" />
-  <ContentPage Title="Tab 3" />
+            xmlns:pages="clr-namespace:XF.Hello"
+             x:Class="XF.Hello.CursoPage"
+            Title="Exemplo de TabbedPage">
+    
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="Tab 1">
+        
+        <StackLayout HorizontalOptions="Center">
+            
+            <Label Text="Conteúdo da Tab 1"></Label>
+
+        </StackLayout>
+
+    </ContentPage>
+    
+    <ContentPage Title="Tab 2" >
+
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="Conteúdo da Tab 2"></Label>
+        </StackLayout>
+
+    </ContentPage>
+    
+    <ContentPage Title="Tab 3">
+
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="Conteúdo da Tab 3"></Label>
+        </StackLayout>
+        
+    </ContentPage>
+
+    <pages:ConfigPage />
+
 </TabbedPage>

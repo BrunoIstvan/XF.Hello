@@ -1,12 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XF.Hello.DataBindingPage">
+             x:Class="XF.Hello.DataBindingPage"
+             >
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+        <StackLayout Padding="10">
+        
+            <StackLayout x:Name="painelAluno" HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+
+                <Label Text="{Binding Nome}" />
+
+                <Label Text="{Binding Email}" />
+
+            </StackLayout>
+
+            <StackLayout x:Name="painelProfessor" HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+
+                <Label Text="{Binding Nome}" />
+
+                <Label Text="{Binding Curso}" />
+
+            </StackLayout>
+
         </StackLayout>
+
     </ContentPage.Content>
+    
 </ContentPage>

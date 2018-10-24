@@ -16,18 +16,17 @@ namespace XF.Hello
 		{
 			InitializeComponent();
 
-            //Button botaoVoltar = new Button()
-            //{
-            //    Text = "Voltar"
-            //};
-            //botaoVoltar.Clicked += async (sender, evargs) =>
-            //{
-            //    await Navigation.PopAsync();
-            //};
+            Button botaoVoltar = new Button()
+            {
+                Text = "Voltar"
+            };
+            botaoVoltar.Clicked += async (sender, evargs) =>
+            {
+                await Navigation.PopAsync();
+            };
 
-            //rootLayout.Childrens.Add(botaoVoltar);
-
-
+            rootLayout.Children.Add(botaoVoltar);
+            
         }
 
         private void OnAlterarIntensidadeSlider(object sender, ValueChangedEventArgs e)
